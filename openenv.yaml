@@ -1,0 +1,17 @@
+name: clinical-trial-env
+version: "1.0.0"
+description: "An RL environment where an AI agent reviews clinical trial protocols for safety violations, missing sections, and contradictions."
+author: al-4710
+tasks:
+  - name: missing_sections
+    description: "Find obviously missing required sections in the protocol"
+    difficulty: easy
+  - name: inclusion_exclusion_check
+    description: "Detect age and dosing contradictions in patient criteria"
+    difficulty: medium
+  - name: hidden_contradiction
+    description: "Find subtle contradictions between dosing and exclusion criteria"
+    difficulty: hard
+env_type: text
+max_steps: 10
+reward_range: [0.0, 1.0]
