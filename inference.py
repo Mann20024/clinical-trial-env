@@ -126,7 +126,7 @@ def main():
         base_url=API_BASE_URL
     )
 
-    env_url = os.getenv("ENV_URL", "http://localhost:8000")
+    env_url = os.getenv("ENV_URL", "https://al-4710-clinical-trial-env.hf.space")
     client = ClinicalTrialEnvClient(base_url=env_url)
 
     health = client.health()
